@@ -1,25 +1,25 @@
 class Limb < Formula
   desc "A focused CLI for git worktree management"
   homepage "https://github.com/ss0923/limb"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ss0923/limb/releases/download/v0.1.0/limb-aarch64-apple-darwin.tar.xz"
-      sha256 "43a87aebf0a5f55230c76b51f9c4733e908538adaa8d0ae700c86897ef4e2ad8"
+      url "https://github.com/ss0923/limb/releases/download/v0.1.1/limb-aarch64-apple-darwin.tar.xz"
+      sha256 "c0fd4dda792736053da4c3ed72f38b571f7a254f0672353cb034b36d0688cfda"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ss0923/limb/releases/download/v0.1.0/limb-x86_64-apple-darwin.tar.xz"
-      sha256 "1071a38a4f55ecee152841cefa1eb304fa3f01064cb6843dcdc6081c02eabddc"
+      url "https://github.com/ss0923/limb/releases/download/v0.1.1/limb-x86_64-apple-darwin.tar.xz"
+      sha256 "d0981ef83cf091137bf4d259a87a573d0cd4039fc1c754722928145f2f191c30"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ss0923/limb/releases/download/v0.1.0/limb-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fee28ddd3f13a801ff040ca24e5edcb3ed0006b66fbe655ff0c50765c1f75f23"
+      url "https://github.com/ss0923/limb/releases/download/v0.1.1/limb-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ceb17c14480bb242a041295b3f77d41c6197c846d244e23dc61c33e9b838bd85"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ss0923/limb/releases/download/v0.1.0/limb-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2d6aae9d9005e627aa26710515ec359f044f17dc5e2104735d6bc171b5d88c98"
+      url "https://github.com/ss0923/limb/releases/download/v0.1.1/limb-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d6740a17592a0c5358e5281b756e954d41595880a50b88f14e988cad26e5ee5e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
